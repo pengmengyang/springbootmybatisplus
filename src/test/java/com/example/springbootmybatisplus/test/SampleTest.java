@@ -1,7 +1,7 @@
 package com.example.springbootmybatisplus.test;
 
-import com.example.springbootmybatisplus.dao.UserDao;
-import com.example.springbootmybatisplus.pojo.UserVO;
+import com.example.springbootmybatisplus.user.dao.UserDao;
+import com.example.springbootmybatisplus.user.vo.UserVO;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,16 +28,7 @@ public class SampleTest {
     @Test
     public void testInsert() {
         log.info("----- insert method test ------");
-        UserVO userVO = new UserVO();
-        userVO.setName("李四");
-        userVO.setAge(30);
-        userVO.setEmail("125@qq.com");
-        int insert = userDao.insert(userVO);
-        if (insert > 0) {
-            log.info("新增成功: {}", insert);
-        } else {
-            log.info("新增失败: {}", insert);
-        }
+
     }
 
 }

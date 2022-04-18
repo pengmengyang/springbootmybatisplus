@@ -1,11 +1,16 @@
-package com.example.springbootmybatisplus.dao;
+package com.example.springbootmybatisplus.user.dao;
 
+import com.example.springbootmybatisplus.user.vo.UserVO;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.example.springbootmybatisplus.pojo.UserVO;
 import org.springframework.stereotype.Repository;
 
 /**
- * @author 64641
+ * <p>
+ *  Mapper 接口
+ * </p>
+ *
+ * @author 6464
+ * @since 2022-04-18
  */
 @Repository
 public interface UserDao extends BaseMapper<UserVO> {

@@ -10,7 +10,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
  * @author 64641
  */
 @SpringBootApplication
-@MapperScan("com.example.springbootmybatisplus.dao")
+@MapperScan("com.example.springbootmybatisplus./*.**.dao")
 public class SpringbootmybatisplusApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
